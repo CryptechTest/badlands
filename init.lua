@@ -78,7 +78,7 @@ minetest.register_biome({
 	y_min = -255,
 	vertical_blend = 2,
 	heat_point = 80,
-	humidity_point = 30,
+	humidity_point = 10,
 })
 
 minetest.register_biome({
@@ -91,7 +91,7 @@ minetest.register_biome({
 	y_max = 31000,
 	y_min = 30,
 	heat_point = 80,
-	humidity_point = 30,
+	humidity_point = 10,
 })
 
 minetest.register_ore({
