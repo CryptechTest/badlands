@@ -69,7 +69,7 @@ minetest.register_biome({
 	depth_top = 1,
 	node_filler = "badlands:red_sand",
 	depth_filler = 1,
-	node_stone = "default:stone",
+	node_stone = "default:desert_stone",
 	node_riverbed = "default:sand",
 	depth_riverbed = 2,
 	node_dungeon = "bakedclay:orange",
@@ -83,12 +83,12 @@ minetest.register_biome({
 
 minetest.register_biome({
 	name = "badlands",
-	node_stone = "default:stone",
+	node_stone = "default:desert_stone",
 	node_riverbed = "default:sand",
 	depth_riverbed = 2,
 	node_dungeon = "bakedclay:orange",
 	node_dungeon_stair = "stairs:stair_bakedclay_orange",
-	y_max = 31000,
+	y_max = 1000,
 	y_min = 30,
 	heat_point = 80,
 	humidity_point = 10,
@@ -96,8 +96,8 @@ minetest.register_biome({
 
 minetest.register_ore({
 	ore_type       = "scatter",
-	ore            = "default:stone_with_gold",
-	wherein        = "default:stone",
+	ore            = "default:desert_stone_with_gold",
+	wherein        = "default:desert_stone",
 	clust_scarcity = 9 * 9 * 9,
 	clust_num_ores = 8,
 	clust_size     = 4,
@@ -109,10 +109,10 @@ minetest.register_ore({
 minetest.register_ore({
 	ore_type       = "stratum",
 	ore            = "bakedclay:orange",
-	wherein        = { "default:stone", "default:silver_sandstone", "default:dirt", "default:silver_sand",
-		"default:stone_with_coal", "default:gravel" },
+	wherein        = { "default:stone", "default:desert_stone", "default:silver_sandstone", "default:dirt", 
+		"default:silver_sand", "default:stone_with_coal", "default:desert_stone_with_coal", "default:gravel" },
 	clust_scarcity = 1,
-	y_max          = 31000,
+	y_max          = 1000,
 	y_min          = -10,
 	fill_ratio     = 10,
 	biomes         = { "badlands", "badlands_plains" },
@@ -124,7 +124,7 @@ for i = 0, 4 do
 		ore               = "bakedclay:natural",
 		wherein           = { "bakedclay:orange" },
 		clust_scarcity    = 1,
-		y_max             = 31000,
+		y_max             = 1000,
 		y_min             = -10,
 		noise_params      = {
 			offset = 28 + i * 50,
@@ -142,7 +142,7 @@ for i = 0, 4 do
 		ore               = "bakedclay:red",
 		wherein           = { "bakedclay:orange" },
 		clust_scarcity    = 1,
-		y_max             = 31000,
+		y_max             = 1000,
 		y_min             = -10,
 		noise_params      = {
 			offset = 23 + i * 8,
@@ -160,7 +160,7 @@ for i = 0, 4 do
 		ore               = "bakedclay:yellow",
 		wherein           = { "bakedclay:orange" },
 		clust_scarcity    = 1,
-		y_max             = 31000,
+		y_max             = 1000,
 		y_min             = -10,
 		noise_params      = {
 			offset = 19 + i * 16,
@@ -178,7 +178,7 @@ for i = 0, 4 do
 		ore               = "bakedclay:brown",
 		wherein           = { "bakedclay:orange" },
 		clust_scarcity    = 1,
-		y_max             = 31000,
+		y_max             = 1000,
 		y_min             = -10,
 		noise_params      = {
 			offset = 17 + i * 5,
@@ -196,7 +196,7 @@ for i = 0, 4 do
 		ore               = "bakedclay:dark_grey",
 		wherein           = { "bakedclay:orange" },
 		clust_scarcity    = 1,
-		y_max             = 31000,
+		y_max             = 1000,
 		y_min             = -10,
 		noise_params      = {
 			offset = 16 + i * 12,
@@ -214,7 +214,7 @@ for i = 0, 4 do
 		ore               = "bakedclay:grey",
 		wherein           = { "bakedclay:orange" },
 		clust_scarcity    = 1,
-		y_max             = 31000,
+		y_max             = 1000,
 		y_min             = -10,
 		noise_params      = {
 			offset = 14 + i * 30,
