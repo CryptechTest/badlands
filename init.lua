@@ -96,7 +96,7 @@ minetest.register_biome({
 
 minetest.register_ore({
 	ore_type       = "scatter",
-	ore            = "default:desert_stone_with_gold",
+	ore            = "ctg_world:desert_stone_with_gold",
 	wherein        = "default:desert_stone",
 	clust_scarcity = 9 * 9 * 9,
 	clust_num_ores = 8,
@@ -110,7 +110,7 @@ minetest.register_ore({
 	ore_type       = "stratum",
 	ore            = "bakedclay:orange",
 	wherein        = { "default:stone", "default:desert_stone", "default:silver_sandstone", "default:dirt", 
-		"default:silver_sand", "default:stone_with_coal", "default:desert_stone_with_coal", "default:gravel" },
+		"default:silver_sand", "default:stone_with_coal", "ctg_world:desert_stone_with_coal", "default:gravel" },
 	clust_scarcity = 1,
 	y_max          = 1000,
 	y_min          = -10,
